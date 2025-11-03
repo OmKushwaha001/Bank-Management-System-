@@ -6,7 +6,7 @@ using namespace std;
 int getPIN() {
     int pin = 0;
     char ch;
-    while ((ch = _getch()) != 13) { 
+    while ((ch = getch()) != 13) { 
         if (ch >= '0' && ch <= '9') {
             cout << "*";
             pin = pin * 10 + (ch - '0');
